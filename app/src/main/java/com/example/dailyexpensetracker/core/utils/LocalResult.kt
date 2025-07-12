@@ -5,3 +5,10 @@ sealed class LocalResult<out T> {
     data class Error(val message: String?) : LocalResult<Nothing>()
     object Loading : LocalResult<Nothing>()
 }
+
+sealed class AuthState {
+    object Idle : AuthState()
+    object Loading : AuthState()
+    object Success : AuthState()
+    data class Error(val message: String) : AuthState()
+}

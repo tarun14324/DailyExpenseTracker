@@ -2,6 +2,9 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.kotlinx.serialization)
 }
 
 android {
@@ -52,18 +55,32 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.material.icons.extended)
+    implementation (libs.androidx.foundation)
+    implementation (libs.androidx.animation)
+
+    //lottie
+    implementation(libs.lottie.compose)
 
     // Navigation
     implementation (libs.androidx.navigation.compose)
 
     // Hilt (DI)
     implementation (libs.hilt.android)
+    kapt(libs.hilt.compiler)
     implementation (libs.androidx.hilt.navigation.compose)
 
     // Coroutines
     implementation (libs.kotlinx.coroutines.android)
 
     // Room
-    implementation(libs.androidx.room.ktx)
-    implementation(libs.androidx.room.runtime)
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    kapt(libs.room.compiler)
+
+    // Datastore
+    implementation(libs.androidx.datastore.preferences)
+
+    // Kotlinx Serialization
+    implementation(libs.kotlinx.serialization.json)
 }

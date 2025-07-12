@@ -9,14 +9,15 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Singleton
 
 @Database(
-    entities = [ExpenseEntity::class],
-    version = 2,
-    exportSchema = true
+    entities = [ExpenseEntity::class,UserEntity::class],
+    version = 1,
+    exportSchema = false
 )
 @Singleton
 abstract class ExpenseDatabase : RoomDatabase() {
 
     abstract fun expenseDao(): ExpenseDao
+    abstract fun userDao(): UserDao
 
     companion object {
         private const val DATABASE_NAME = "expense_database"
