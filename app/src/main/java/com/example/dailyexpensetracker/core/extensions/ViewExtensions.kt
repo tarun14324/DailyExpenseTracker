@@ -16,8 +16,3 @@ fun View.isGone(): Boolean = this.visibility == View.GONE
 fun Context.toast(message: String, duration: Int = LENGTH_SHORT) {
     makeText(this, message, duration).show()
 }
-
-@Composable
-fun ShowToast(message: String) {
-    LocalContext.current.toast(message)
-}

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">DailyExpenseTracker</string>
+    <string name="get_started">Get Started</string>
+    <string name="new_user_sign_up_cta">New user? Sign Up</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="sign_up_success">Signup successful! Please login.</string>
+    <string name="sign_up">Signup</string>
+    <string name="hide_password">Hide password</string>
+    <string name="show_password">Show password</string>
+    <string name="get_started_desc">Going cashless has never been this easier with the world’s most leading expense manager.</string>
 </resources>
