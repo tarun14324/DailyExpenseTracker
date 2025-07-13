@@ -5,33 +5,56 @@ The app allows users to sign up and log in, track income and expenses, view repo
 
 ---
 
-## Project Structure
+# Project Folder Structure
 
-│
-├── core/ # Core utilities, extensions, constants, base classes
-│
-├── di/ # app modules for dependency injection
-│
-├── data/ # Data layer
-│ ├── local/ # Room database or DataStore implementation
-│ ├── model/ # Data Transfer Objects (DTOs), Firebase models
-│ └── repository/ # Repository implementations interfacing data sources
-│
-├── domain/ # Business logic layer
-│ ├── model/ # Business entities (clean models)
-│ └── usecase/ # Use cases containing business rules
-│
-├── presentation/ # UI layer using Jetpack Compose
-│ ├── navigation/ # Navigation setup for Compose screens
-│ ├── ui/ # Screens
-│ │ ├── screens 
-│ ├── components/ # Reusable Compose components
-│ └── viewmodel/ # ViewModels managing UI state
-│
-├── MainActivity.kt # Root activity hosting Compose UI
-└── App.kt # Application class (Hilt setup)
+## core
+- Core utilities, extensions, constants, base classes
 
+## di
+- App modules for dependency injection
 
+## data
+- Data layer
+
+### local
+- Room database or DataStore implementation
+
+### model
+- Data Transfer Objects (DTOs), Firebase models
+
+### repository
+- Repository implementations interfacing data sources
+
+## domain
+- Business logic layer
+
+### model
+- Business entities (clean models)
+
+### usecase
+- Use cases containing business rules
+
+## presentation
+- UI layer using Jetpack Compose
+
+### navigation
+- Navigation setup for Compose screens
+
+### ui
+- Screens
+
+#### screens
+- Individual screen implementations
+
+### components
+- Reusable Compose components
+
+### viewmodel
+- ViewModels managing UI state
+
+## Root Files
+-  Root activity hosting Compose UI
+-  Application class (Hilt setup)
 
 ---
 
