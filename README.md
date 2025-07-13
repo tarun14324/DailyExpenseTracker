@@ -20,7 +20,7 @@ The app allows users to sign up and log in, track income and expenses, view repo
 - Room database or DataStore implementation
 
 ### model
-- Data Transfer Objects (DTOs), Firebase models
+- Data Transfer Objects (DTOs)
 
 ### repository
 - Repository implementations interfacing data sources
