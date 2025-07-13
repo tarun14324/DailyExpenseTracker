@@ -58,6 +58,7 @@ dependencies {
     implementation(libs.androidx.material.icons.extended)
     implementation (libs.androidx.foundation)
     implementation (libs.androidx.animation)
+    implementation(libs.androidx.constraintlayout.compose)
 
     //lottie
     implementation(libs.lottie.compose)
@@ -67,6 +68,7 @@ dependencies {
 
     // Hilt (DI)
     implementation (libs.hilt.android)
+    implementation(libs.material)
     kapt(libs.hilt.compiler)
     implementation (libs.androidx.hilt.navigation.compose)
 
@@ -83,4 +85,7 @@ dependencies {
 
     // Kotlinx Serialization
     implementation(libs.kotlinx.serialization.json)
+
+    // Coil
+    implementation(libs.coil.compose)
 }

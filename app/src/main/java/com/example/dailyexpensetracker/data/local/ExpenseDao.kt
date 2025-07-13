@@ -13,18 +13,18 @@ interface ExpenseDao {
     @Query("SELECT * FROM expenses")
     fun getAllExpense(): Flow<List<ExpenseEntity>>
 
-    @Query("SELECT * FROM expenses WHERE category = 'Expense' ORDER BY amount DESC LIMIT 5")
-    fun getTopExpenses(): Flow<List<ExpenseEntity>>
+    @Query("SELECT category AS type, date, SUM(amount) AS totalAmount FROM expenses GROUP BY category, date")
+    fun getAllExpenseByDate(): Flow<List<ExpenseSummary>>
 
-//    @Query("SELECT category, date, SUM(amount) AS total_amount FROM expenses where category = :category GROUP BY category, date ORDER BY date")
-//    fun getAllExpenseByDate(category: String = "Expense"): Flow<List<ExpenseSummary>>
+    @Query("SELECT COUNT(*) > 0 FROM expenses WHERE title = :name AND amount = :amount AND category = :category")
+    suspend fun isExpenseExist(name: String, amount: Double, category: String): Boolean
+
+    @Query("DELETE FROM expenses")
+    suspend fun clearAllUserData()
 
     @Insert
-    suspend fun insertExpense(expenseEntity: ExpenseEntity)
+    suspend fun insertExpense(expenseEntity: ExpenseEntity):Long
 
     @Delete
     suspend fun deleteExpense(expenseEntity: ExpenseEntity)
-
-    @Update
-    suspend fun updateExpense(expenseEntity: ExpenseEntity)
 }

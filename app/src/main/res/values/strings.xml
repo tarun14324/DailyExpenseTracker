@@ -3,11 +3,47 @@
     <string name="get_started">Get Started</string>
     <string name="new_user_sign_up_cta">New user? Sign Up</string>
     <string name="login">Login</string>
+    <string name="logout">Logout</string>
     <string name="password">Password</string>
     <string name="username">Username</string>
+    <string name="name">Name</string>
     <string name="sign_up_success">Signup successful! Please login.</string>
     <string name="sign_up">Signup</string>
+    <string name="profile">Profile</string>
+    <string name="theme">Theme</string>
     <string name="hide_password">Hide password</string>
     <string name="show_password">Show password</string>
-    <string name="get_started_desc">Going cashless has never been this easier with the world’s most leading expense manager.</string>
+
+    // add expenses
+    <string name="amount">Amount</string>
+    <string name="income">Income</string>
+    <string name="type">Type</string>
+    <string name="expense">Expense</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="add_income">Add Income</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="select_date">Select date</string>
+    <string name="date">Date</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="change_image">Change Image</string>
+    <string name="enter_amount">Enter amount > 0</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="add_notes">Add notes (max 100 chars)</string>
+    <string name="receipt_image">Receipt Image (Optional)</string>
+    <string name="pick_image">Pick an Image</string>
+
+    // reports
+    <string name="seven_days_reports">Last 7 Days Report</string>
+    <string name="daily_totals">Daily Totals</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="category_totals">Category Totals</string>
+    <string name="chart">Chart</string>
+    <string name="see_all">See all</string>
+    <string name="all_transactions">All Transactions</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="export_share_pdf"><![CDATA[Export & Share PDF]]></string>
+    <string name="go_to_reports">Go to Reports</string>
+    <string name="no_data">Start tracking by adding an income or an expense.</string>
+    <string name="empty" />
 </resources>

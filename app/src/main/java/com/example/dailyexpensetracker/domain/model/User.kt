@@ -1,6 +1,5 @@
 package com.example.dailyexpensetracker.domain.model
 
-
 import kotlinx.serialization.Serializable
 
 @Serializable

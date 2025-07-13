@@ -7,4 +7,5 @@ interface UserRepository {
     suspend fun signup(username: String, password: String): Boolean
     suspend fun isLoggedIn(): Boolean
     suspend fun setUserProfile(user: User)
+    suspend fun clearAllUserData()
 }
