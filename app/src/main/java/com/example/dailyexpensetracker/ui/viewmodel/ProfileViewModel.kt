@@ -35,12 +35,12 @@ class ProfileViewModel @Inject constructor(
         }
     }
 
-    // Clears user session and deletes user data from local storage
+    // Clears user session  from local storage
     fun onLogoutClicked() {
         viewModelScope.launch {
             dataBaseRepository.clearAllUserData()
             userPreferences.clearProfile()
-            userRepository.clearAllUserData()
+           // userRepository.clearAllUserData()
         }
     }
 }
